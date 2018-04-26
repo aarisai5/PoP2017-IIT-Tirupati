@@ -1,0 +1,338 @@
+<html>
+<head>
+<style>
+@function makelongshadow($length,$angle) {
+  $val: 0px 0px transparent;
+  @for $i from 1 through $length {
+    $val: #{$val}, #{$i}px #{$i*$angle}px #aaa;
+  }
+  @return $val;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
+
+
+
+body {
+  background: radial-gradient(#fff, #aaa);
+  background-size: 100vw 100vh; 
+  overflow: hidden;
+  padding-top: 40vh;
+}
+
+.txt {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 6vmin;
+  font-weight: 500;
+  animation: netflix_style 3.5s infinite;
+  outline: none;
+  white-space: nowrap;
+}
+
+@keyframes netflix_style {
+  0% {
+    text-shadow: makelongshadow(100,1);
+    color:#ffffff;
+    transform: scale(0.5, 0.5);
+  }
+  10% {
+    text-shadow: makelongshadow(100,1.5);
+    color:#ffffff;
+    transform: scale(0.5, 0.5);
+  }
+  15% {
+     color:#ffffff;
+  }
+  20% {    
+    color:#ffffff;
+    text-shadow: none;
+    transform: scale(1.1, 1.1);
+  }
+  75% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;    
+    color:#ffffff;
+    transform: scale(0.85, 0.9);
+  }
+  
+  100% {
+    opacity: 0;
+  }
+}
+body13{ background-color:#001919;}
+
+body, html {
+    height: 100%;width: 100%;
+    margin: 0;padding: 0;
+}
+
+svg{
+  width:100%; height:100%;
+  left:50%; top:50%; position:absolute;
+  transform: translate(-50%,-50%);
+}
+
+
+#DiacoDesignLink,#pens{
+  color: #fff;
+}
+body {
+  
+  background-color: #eee;
+  min-height: 100%;
+  color: #fff;
+  //@include background-image(radial-gradient(center, #eee 0%,#bbb 100%));
+  //background: url('ss.mp4');
+  background-size: cover;
+  //background-position: center;
+  font-family: Raleway, sans-serif;;	
+}
+html {
+  height:100%;
+}
+body1 {
+  min-height:100%;
+  height:auto;
+	font-family:"Unica One";
+	font-size: 4rem;
+  color:#16a085;
+  background:#f1f1f1;
+  display:flex;
+  .name {
+    display:flex;
+    margin:auto;
+    padding:0 1rem 1rem;
+    position: relative;
+    &:before {
+      content:'';
+      width:100%;
+      background:#16a085;
+      opacity:0.3;
+      bottom:0;
+      height: 1px;
+      left:0;
+      position:absolute;
+    }
+	
+    .letter {
+      display:inline-block;
+      opacity:0;
+      transform:scale(0.9);
+    }
+  }
+}
+
+.ea
+{
+	opacity:0.7;
+}
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+  opacity:0.8;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+#polina { 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  width: 31%;
+  margin:1rem;
+  float: right;
+  font-size: 1.2rem;
+  top:20px;
+  left:500px;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+}
+#polina button { 
+  display: inline-block;
+  width: 100%;
+  padding: .4rem;
+  border: none; 
+  margin:; 
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#polina button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+.shadow {
+    margin-top: 100px;
+    color: #ddd;
+    font-family: 'Josefin Slab', serif;
+    text-rendering: optimizelegibility;
+    font-size: 2em;
+    font-weight: 200;
+    text-align: center;
+    text-shadow: 
+        0 -1px 0 rgba(0, 0, 0, 0.15), 
+        0 2px 2px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-out;
+    will-change: text-shadow;
+}
+
+.shadow:hover {
+    transform: translate(1px,1px);
+        color: #ddd;
+        text-shadow: 0 -1px 0 #FFFFFF,
+        1px 1px 1px #666,
+        2px 2px 10px rgba(0, 0, 0, 0.15),
+        4px 5px 10px rgba(0, 0, 0, 0.15),
+        6px 9px 10px rgba(0, 0, 0, 0.15),
+        8px 15px 10px rgba(0, 0, 0, 0.15),
+        10px 20px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+a {
+  display: inline-block;
+  width:320px;
+  height:200px;
+  align:center;
+  color: #fff;
+  text-decoration: none;
+  background:rgba(0,0,0,0.5);
+  padding: .5rem;
+  transition: .6s background; 
+}
+a:hover{
+	
+		width:300px;
+		height:250px;
+		radius:50%;
+		border-radius:50%;
+		background-image:url("back3.jpg");
+  
+  
+}
+
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
+</style>
+<script>
+var vid = document.getElementById("bgvid");
+var pauseButton = document.querySelector("#polina button");
+
+if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+}
+
+function vidFade() {
+  vid.classList.add("stopfade");
+}
+
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed 
+vid.pause();
+// to capture IE10
+vidFade();
+}); 
+
+
+pauseButton.addEventListener("click", function() {
+  vid.classList.toggle("stopfade");
+  if (vid.paused) {
+    vid.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+})
+
+/* a Pen by Diaco m.lotfollahi  : https://diacodesign.com */
+var beep = document.createElement('audio');
+beep.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/heart_beep.mp3'
+var PPath = document.getElementById('pulse') ,
+    svg = document.getElementById('svg') , count = 15 , Pulse = new TimelineMax({repeat:-1});
+for(var i=0;i<count;i++){
+	var svgCln = PPath.cloneNode(true);
+	TweenLite.set(svgCln,{stroke:'rgba(19,195,173,'+(count-i)*0.04+')'});
+	svg.appendChild(svgCln);
+}
+var BL = PPath.cloneNode(true); svg.appendChild(BL); BL.setAttribute("class","");
+TweenLite.set(PPath,{filter:'url(#glow)'});
+Pulse.staggerFromTo(PPath,3.5,{drawSVG:'0% 0%'},{drawSVG:'100% 100%',ease:Power0.easeNone},0.04)
+     .staggerFromTo('.myP',3.5,{drawSVG:'0% 3%'},{drawSVG:'100% 103%',ease:Power0.easeNone},0.04,0)
+     .fromTo(BL,3.4,{drawSVG:'0%'},{drawSVG:'100%',ease:Power0.easeNone},0)
+     .fromTo(BL,1.5,{opacity:0.05,strokeWidth:9},{strokeWidth:4,opacity:0.01},'-=1.5')
+     .add(function(){Pulse.timeScale(5)},0.75)
+		 .add(function(){Pulse.timeScale(1)},2.6)
+		 .add(function(){beep.play()},0.75)
+/* a Pen by Diaco m.lotfollahi  : https://diacodesign.com */
+
+</script>
+</head>
+<body>
+
+<video poster="bac.jpg" id="bgvid" playsinline autoplay muted loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="wel2.mp4" type="video/webm" opacity="0.3">
+<source src="wel2.mp4" type="video/mp4" opacity="0.3">
+</video>	
+
+<div style="width:700px;height:900px;float:left" >
+<p> <h1 class="shadow animate" style="font-size:55px;" align="center"> <br/>&nbsp &nbsp Pick Your Doctor and Get Relief from Your Pain<br/>
+</h1><h3 align="center" style="font-size:70px;font-size-adjust:30px;transform: translate(1px,1px);
+        color: #ddd;
+    font-family: 'Josefin Slab', serif;
+    text-rendering: optimizelegibility;
+        text-shadow: 0 -1px 0 #FFFFFF,
+        1px 1px 1px #666,
+        2px 2px 10px rgba(0, 0, 0, 0.15),
+        4px 5px 10px rgba(0, 0, 0, 0.15),
+        6px 9px 10px rgba(0, 0, 0, 0.15),
+        8px 15px 10px rgba(0, 0, 0, 0.15),
+        10px 20px 10px rgba(0, 0, 0, 0.15);" class="txt"> &nbsp WELCOME TO SPECIALIST <br>AT SELECTED LOCATION</h3></p>
+</div>
+<br/>
+<div id="polina" style="background-image:url('s.jpg');top:2px;left:500px;">
+<table width="100%" cellspacing="50px">
+	<!tr>
+	<!td style="background-image:url('');"><!a href="1.html" > <!h1> </h1></td>
+	<!/tr>
+	<tr>
+	<td><a href="s11.html" > <h1 align="center" class="shadow animate"> List of Specialists  </h1></td>
+	</tr>
+	<tr>
+	<td><a href="about.html" > <h1 align="center" class="shadow animate">  About the <br/>    site</h1></td>
+	</tr>
+</table>
+</div>
+</body>
+</html>
